@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+		/* --- THE HOMELY PRESET --- */
+
+		/* 1. Soften the Background */
+		body, .site, .site-content {
+			background-color: #F4F1EA; /* Oatmeal background */
+			color: #4B3621; /* Coffee brown text */
+		}
+
+		/* 2. Make Typography Warm */
+		h1, h2, h3, h4, h5, h6 {
+			color: #2E221F; /* Dark Espresso headers */
+			font-family: 'Merriweather', serif; /* Classic book feel */
+			letter-spacing: -0.5px;
+		}
+
+		/* 3. Link Styling */
+		a {
+			color: #A0522D; /* Rust colored links */
+			text-decoration: none;
+			border-bottom: 1px dotted #A0522D; /* Subtle dotted underline */
+			transition: all 0.3s ease;
+		}
+
+		a:hover {
+			color: #8B4513;
+			border-bottom: 1px solid #8B4513;
+		}
+
+		/* 4. Cozy Content Box (Optional: adds a card look) */
+		.entry-content, .post, article {
+			max-width: 800px;
+			margin: 0 auto; /* Center the reading experience */
+			line-height: 1.8; /* Give text room to breathe */
+		}
+
+		/* 5. Soften Images */
+		img {
+			border-radius: 4px; /* Slightly rounded corners on photos */
+			filter: sepia(20%); /* Adds a tiny vintage tint to photos automatically */
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="text-align:center; font-size:3rem;"><a href="/" style="border:none; color:#2E221F;">{{ site.title }}</a></h1>
+            <p style="text-align:center; font-style:italic; margin-bottom:60px; border-bottom:1px solid #dcd9d0; padding-bottom:40px;">{{ site.description }}</p>
+        </header>
+
+        {{ content }}
+        
+        <footer>
+            <p>&copy; 2026 {{ site.title }}. Built by hand.</p>
+        </footer>
+    </div>
+</body>
+</html>
