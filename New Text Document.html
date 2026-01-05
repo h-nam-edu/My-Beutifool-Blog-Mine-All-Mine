@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homely Blog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- THE COZY PALETTE --- */
+        :root {
+            --paper: #F4F1EA;       /* Oatmeal background */
+            --ink: #4A3B32;         /* Coffee text */
+            --leather: #8B5A2B;     /* Caramel accents */
+            --faded: #8c8680;       /* Date text */
+            --highlight: #E8E4D9;   /* Subtle box background */
+        }
+
+        /* --- GLOBAL STYLES --- */
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'Lora', serif; /* The body font */
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 700px;
+            margin: 0 auto; /* Centers everything */
+            padding-top: 60px;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* The fancy header font */
+            color: #2E221F;
+        }
+
+        h1.site-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        p.site-subtitle {
+            text-align: center;
+            font-style: italic;
+            color: var(--leather);
+            margin-bottom: 60px;
+            border-bottom: 1px solid #dcd9d0;
+            padding-bottom: 40px;
+        }
+
+        a {
+            color: var(--leather);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--leather);
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: #eaddcf;
+            border-bottom: 1px solid var(--leather);
+        }
+
+        /* --- BLOG POST CARDS --- */
+        .blog-post {
+            margin-bottom: 60px;
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: var(--faded);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .post-title {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .post-excerpt {
+            font-size: 1.1rem;
+        }
+
+        .read-more {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid #dcd9d0;
+            font-size: 0.9rem;
+            color: var(--faded);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1 class="site-title">The Wooden Desk</h1>
+            <p class="site-subtitle">Notes on life, coffee, and staying warm.</p>
+        </header>
+
+        <article class="blog-post">
+            <span class="post-date">October 14, 2025</span>
+            <h2 class="post-title"><a href="#">Why I switched to static HTML</a></h2>
+            <p class="post-excerpt">
+                There is something beautiful about plain text. No databases, no plugins updating in the background. Just me, a text editor, and a cup of tea. It feels more like writing a letter than managing a server...
+            </p>
+            <a href="#" class="read-more">Read Entry &rarr;</a>
+        </article>
+
+        <article class="blog-post">
+            <span class="post-date">September 22, 2025</span>
+            <h2 class="post-title"><a href="#">Autumn in the city</a></h2>
+            <p class="post-excerpt">
+                The leaves are finally turning that burnt orange color I love so much. I spent the afternoon walking through the park, listening to the crunch of gravel under my boots.
+            </p>
+            <a href="#" class="read-more">Read Entry &rarr;</a>
+        </article>
+
+        <footer>
+            <p>&copy; 2025 My Homely Blog. Built by hand.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
